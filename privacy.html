@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d16">
+  <meta name="description" content="Nullgarden privacy statement. No analytics, no tracking, no unnecessary data collection.">
+  <title>Privacy — Nullgarden</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0d16;
+      --text: #f1f3ff;
+      --muted: #929bb8;
+      --accent: #a5a6ff;
+      --line: rgba(180,190,255,.13);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+      background: radial-gradient(ellipse at 50% 0%, rgba(100,91,220,.15), transparent 50%), var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(900px, calc(100% - 40px)); margin: auto; }
+    header {
+      height: 78px; display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { display: flex; align-items: center; gap: 11px; font-size: 14px; font-weight: 650; letter-spacing: .5px; }
+    .mark {
+      width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid #999bff50;
+      border-radius: 9px; color: var(--accent); background: #8585ff13;
+    }
+    .back { color: var(--muted); font-size: 13px; }
+    .back:hover, footer a:hover { color: var(--text); }
+    main { flex: 1; display: flex; align-items: center; padding: 80px 0 100px; }
+    .content { max-width: 690px; }
+    .eyebrow { color: var(--accent); font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 2.5px; text-transform: uppercase; }
+    h1 { margin: 24px 0 18px; font-size: clamp(43px, 8vw, 72px); font-weight: 620; letter-spacing: -3.5px; line-height: 1.05; }
+    h1 span { color: var(--accent); }
+    .lead { max-width: 570px; color: #b0b8d4; font-size: 18px; line-height: 1.8; }
+    .rule { width: 100%; height: 1px; margin: 42px 0; background: var(--line); }
+    .section-label { margin-bottom: 14px; color: var(--muted); font: 10px ui-monospace, monospace; letter-spacing: 2px; text-transform: uppercase; }
+    .statement { font-size: 15px; line-height: 2; color: #c3c9df; }
+    .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 38px; }
+    .principle { padding-top: 18px; border-top: 1px solid var(--line); }
+    .principle h2 { margin: 0 0 10px; font-size: 14px; font-weight: 570; }
+    .principle p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.9; }
+    .note { margin-top: 42px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 10px; background: #ffffff04; color: var(--muted); font-size: 12px; line-height: 1.9; }
+    .note strong { color: #c3c9df; font-weight: 600; }
+    footer {
+      min-height: 75px; display: flex; align-items: center; justify-content: space-between; gap: 20px;
+      border-top: 1px solid var(--line); color: #737c99; font-size: 11px;
+    }
+    @media (max-width: 560px) {
+      main { padding: 60px 0 70px; }
+      h1 { letter-spacing: -2px; }
+      .principles { grid-template-columns: 1fr; gap: 22px; }
+      footer { padding: 20px 0; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./index.html"><span class="mark">N</span> NULLGARDEN</a>
+      <a class="back" href="./index.html">← Back to home</a>
+    </header>
+
+    <main>
+      <article class="content">
+        <div class="eyebrow">Privacy / Statement 001</div>
+        <h1>Your data.<br><span>Your boundaries.</span></h1>
+        <p class="lead">
+          This app is for personal use only and does not collect or share any data.
+          No analytics. No tracking. No advertising profiles.
+        </p>
+
+        <div class="rule"></div>
+        <div class="section-label">The short version</div>
+
+        <div class="statement">
+          <p>
+            Nullgarden is intended for personal use. The application is designed
+            to operate without collecting analytics or tracking user activity,
+            and it does not sell or share personal information for advertising.
+          </p>
+          <p>
+            When you use Google Drive integration, the files you choose to back
+            up are transferred to the Google Drive account and destination you
+            authorize. This transfer is part of the application's intended
+            functionality and is subject to Google's own terms and privacy policy.
+          </p>
+          <p>
+            This project does not operate a hosted account service or intentionally
+            collect personal profiles. You can inspect the source code to understand
+            how the application handles data.
+          </p>
+        </div>
+
+        <div class="principles">
+          <section class="principle">
+            <h2>01 — No tracking</h2>
+            <p>No analytics or advertising trackers are intentionally built into the application.</p>
+          </section>
+          <section class="principle">
+            <h2>02 — Your storage</h2>
+            <p>Files are sent to the Google Drive destination you authorize, subject to Google's policies.</p>
+          </section>
+          <section class="principle">
+            <h2>03 — Personal use</h2>
+            <p>Nullgarden is a personal utility, not a hosted service for collecting user accounts or profiles.</p>
+          </section>
+          <section class="principle">
+            <h2>04 — Transparency</h2>
+            <p>The source code is available for inspection so you can review how the application works.</p>
+          </section>
+        </div>
+
+        <div class="note">
+          <strong>Third-party services</strong><br>
+          Google Drive is operated by Google and is subject to Google's privacy
+          policy and terms of service. This statement describes Nullgarden itself
+          and does not replace the policies of external services.
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <a class="brand" href="./index.html">NULLGARDEN</a>
+      <span>Privacy without the performance.</span>
+      <span>© 2026</span>
+    </footer>
+  </div>
+</body>
+</html>
